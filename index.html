@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ball Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="big-container">
+    <div class="START-PAGE page" id="startPage">
+        <h1>!GAME RULES!</h1>
+        <span>*Click and hold on red list items to get images*</span>
+        <ul>
+            <li class="hover1">Goal of the game is to get the GOLDEN BALL as fast as possible*<img src="img/g-ball.png" alt=""></li>
+            <li class="hover2">You can buy golden ball for 3000 points* <img src="img/buy-Ball.png" alt=""></li>
+            <li class="hover3">To do so you have to have all previous upgrades* <img src="img/buy-List.png" alt=""></li>
+            <li class="no-image">Upgrades have to be bought from top to bottom</li>
+            <li class="hover4">Your time will be shown at the bottom left* <img src="img/your-Time.png" alt=""></li>
+            <li class="hover5">Once you get the ball your timer will stop* <img src="img/time-Stop.png" alt=""></li>
+            <li class="hover6">Send me ss of your score, <b>the highest score gets FREE BEER!* </b><img src="img/beer.png" alt=""></li>
+        </ul>
+        <button class="button" id="startGame">START GAME</button>
+    </div>
+        <h2 class="textScore">Score: <span id="score">0</span></h2>
+    <div id="gamePage" class="GAME-PAGE page">
+        
+        <img src="img/ball.png" alt="cookie" id="photo">
+        <button id="goShop"> GO SHOP</button>
+    </div>
+    <div class="SHOP-PAGE page" id="shopPage">
+        <button id="spinCookie">SPIN COOKIE +1 POINT PER CLICK(20pts)</button>
+        <button id="addTen">ADD 10 POINTS ON CLICK (200pts)</button>
+        <button id="addFifty">ADD 50 POINTS ON CLICK (400pts)</button>
+        <button id="changeBall">BUY GOLD BALL AND WIN (3000pts)</button>
+        <button id="goBack">BACK TO GAME</button>
+    </div>
+    <p id="pipi">Your time is: <span id="seconds">00</span>:<span id="tens">00</span><span id="marks"></span></p>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>

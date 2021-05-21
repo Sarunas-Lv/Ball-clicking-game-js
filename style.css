@@ -1,0 +1,145 @@
+*::selection{
+    display: none;
+}
+body{
+    background-color: lightgreen;
+}
+/* button style */
+button{
+    width:fit-content;
+    padding: 5px 15px;
+    font-weight: 800;
+    font-size: 15px;
+    background: linear-gradient(rgb(6, 170, 47),rgb(189, 11, 11));
+    color: white;
+}
+.button a{
+    text-decoration: none;
+    color: white;
+}
+
+button:hover{
+    color: greenyellow;
+}
+button:disabled{
+    background: thistle;
+}
+button:disabled:hover{
+    color:teal;
+}
+/* main content style */
+.page{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 20px;
+    align-items: center;
+}
+.big-container{
+    margin: 0 auto;
+    width: 500px;
+    padding: 2rem;
+    background-color: white;
+}
+.textScore{
+    margin: 0 auto;
+    text-align: center;
+    display: none;
+}
+/* ball style */
+img{
+    width: 180px;
+    height: 180px;
+}
+#photo{
+    transition: 400ms;
+    border-radius: 50%;
+}
+/* pages */
+#startPage{
+    display: flex;
+}
+#shopPage{
+    display: none;
+}
+#gamePage{
+    display: none;
+}
+/* start list */
+li:hover{
+    color: crimson;
+    font-weight: 800;
+}
+.no-image:hover{
+    color: black;
+}
+.hover1 img{
+    height: 100px;
+    width: 100px;
+    margin-left: 150px;
+    display: none;
+}
+.hover1:active img{
+    display: block;
+}
+.hover2 img{
+    height: 60px;
+    width: 350px;
+    margin-left: 20px;
+    display: none;
+}
+.hover2:active img{
+    display: block;
+}
+.hover3 img{
+    height: 200px;
+    width: 350px;
+    margin-left: 50px;
+    display: none;
+}
+.hover3:active img{
+    display: block;
+}
+.hover4 img{
+    height: 100px;
+    width: 200px;
+    margin-left: 80px;
+    display: none;
+}
+.hover4:active img{
+    display: block;
+}
+.hover5 img{
+    height: 240px;
+    width: 320px;
+    margin-left: 50px;
+    display: none;
+}
+.hover5:active img{
+    display: block;
+}
+.hover6 img{
+    height: 300px;
+    width:auto;
+    margin-left: 150px;
+    display: none;
+}
+.hover6:active img{
+    display: block;
+}
+ /* animation  */
+.rotate {
+  animation-name: spinner;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes spinner {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
